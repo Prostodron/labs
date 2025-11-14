@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, date
 from typing import Dict, Any
 from models import *
-
+print()
 
 class DataManager:
     @staticmethod
