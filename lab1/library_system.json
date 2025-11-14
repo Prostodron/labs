@@ -1,0 +1,67 @@
+{
+  "library": {
+    "id": 1,
+    "name": "Центральная  библиотека",
+    "address": "ул. Московская, 52",
+    "books": [
+      {
+        "id": 1,
+        "title": "Мастер и Маргарита",
+        "author": "Михаил Булгаков",
+        "year": 1966,
+        "status": "borrowed",
+        "type": "fiction",
+        "genre": "роман"
+      },
+      {
+        "id": 2,
+        "title": "Краткая история времени",
+        "author": "Стивен Хокинг",
+        "year": 1988,
+        "status": "available",
+        "type": "scientific",
+        "field": "физика"
+      },
+      {
+        "id": 3,
+        "title": "Python для начинающих",
+        "author": "Джон Смит",
+        "year": 2023,
+        "status": "available",
+        "type": "textbook",
+        "subject": "программирование"
+      }
+    ],
+    "librarians": [
+      {
+        "id": 1,
+        "name": "Петрова Анна",
+        "employee_id": "LIB001",
+        "managed_borrowings": [
+          1
+        ]
+      }
+    ]
+  },
+  "readers": [
+    {
+      "id": 1,
+      "full_name": "Иванов Сергей",
+      "phone": "+79991234567",
+      "borrowings": [
+        1
+      ]
+    }
+  ],
+  "borrowings": [
+    {
+      "id": 1,
+      "borrow_date": "2024-01-15",
+      "return_date": "2024-01-29",
+      "status": "active",
+      "book_id": 1,
+      "librarian_id": 1,
+      "reader_id": 1
+    }
+  ]
+}
