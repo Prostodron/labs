@@ -74,7 +74,7 @@ class Reader:
         self.phone = phone
         self.borrowings: List[Borrowing] = []
     
-    def borrow_book(self, book: Book, librarian: Librarian, return_date: date) -> 'Выдача ':
+    def borrow_book(self, book: Book, librarian: Librarian, return_date: date) -> 'Borrowing':
         borrowing = Borrowing(len(self.borrowings) + 1, date.today(), return_date)
         borrowing.book = book
         borrowing.librarian = librarian
